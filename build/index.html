@@ -15,28 +15,59 @@
 	<body class="body">
 		<header class="header">
 			<div class="container">
-				<a class="logo">Company</a>
-				<div class="headerMenu">
-					<button class="headerMenu__search"></button>
-					<nav class="headerMenu__nav navigate">
-						<ul class="navigate__items">
-							<li class="navigate__items_item">
-								<a href="#">Portfolio</a>
-							</li>
-							<li class="navigate__items_item">
-								<a href="#">Team</a>
-							</li>
-							<li class="navigate__items_item">
-								<a href="#">About</a>
-							</li>
-							<li class="navigate__items_item">
-								<a href="#">Blog</a>
-							</li>
-							<li class="navigate__items_item">
-								<a href="#">Concat</a>
-							</li>
-						</ul>
-					</nav>
+				<div class="headerContainer">
+					<a class="logo">Company</a>
+					<div class="headerMenu">
+						<button class="headerMenu__search btnReset">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<circle
+									cx="11.7666"
+									cy="11.7666"
+									r="8.98856"
+									stroke="white"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+								<path
+									d="M18.0183 18.4851L21.5423 22"
+									stroke="white"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+						<nav class="headerMenu__nav navigate">
+							<ul class="navigate__list">
+								<li class="navigate__item">
+									<a class="navigate__link" href="#"
+										>Portfolio</a
+									>
+								</li>
+								<li class="navigate__item">
+									<a class="navigate__link" href="#">Team</a>
+								</li>
+								<li class="navigate__item">
+									<a class="navigate__link" href="#">About</a>
+								</li>
+								<li class="navigate__item">
+									<a class="navigate__link" href="#">Blog</a>
+								</li>
+								<li class="navigate__item">
+									<a class="navigate__link" href="#"
+										>Concat</a
+									>
+								</li>
+							</ul>
+						</nav>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -44,12 +75,14 @@
 		<main>
 			<section class="hero">
 				<div class="container">
-					<h1 class="hero__title">We produce the best products</h1>
+					<h1 class="hero__title">
+						We&nbsp;produce the&nbsp;best products
+					</h1>
 					<p class="hero__text">
 						Mattis quam, lectus et justo amet, tortor, lectus
 						dapibus est. Habitasse efficitur sodales vel est.
 					</p>
-					<button class="hero__button">Button</button>
+					<button class="hero__button btn btnFont">Button</button>
 				</div>
 			</section>
 
@@ -99,7 +132,7 @@
 				</div>
 			</section>
 
-			<section class="preview">
+			<div class="preview">
 				<div class="container">
 					<div class="previewVideo">
 						<video src=""></video>
@@ -109,7 +142,7 @@
 						></button>
 					</div>
 				</div>
-			</section>
+			</div>
 
 			<section class="portfolio">
 				<div class="container">
@@ -172,9 +205,9 @@
 				</div>
 			</section>
 
-			<section class="slider">
+			<div class="slider">
 				<img src="./img/slider/Rectangle7.jpg" alt="img" />
-			</section>
+			</div>
 
 			<section class="services">
 				<div class="container">
