@@ -5,12 +5,15 @@ const less = require('gulp-less');
 const gulpIf = require('gulp-if')
 const cleanCSS = require('gulp-clean-css') // убирает лишние пробелы, табы и т.д.
 const autoprefixer = require('gulp-autoprefixer')
+const babel = require('gulp-babel')
+const uglify = require('gulp-uglify')
+const concat = require('gulp-concat')
 const gcmq = require('gulp-group-css-media-queries'); // объединяет медиа запросы
 const sourcemaps = require('gulp-sourcemaps') // карта по css
 
 // можно в package.json прописать в scripts укороч. запуск
 let isMinify = process.argv.includes('--mini') // forRelizBuild
-let isMapForCss = process.argv.includes('--map') // forDevelop
+let isMapForDevelop = process.argv.includes('--map') // forDevelop
 
 function clean() {
 	return del('./build/*')
@@ -24,12 +27,12 @@ function html() {
 
 function styles() {
 	return gulp.src('./src/css/main.less')
-		.pipe(gulpIf(isMapForCss, sourcemaps.init()))
+		.pipe(gulpIf(isMapForDevelop, sourcemaps.init()))
 		.pipe(less())
 		.pipe(gulpIf(isMinify, gcmq()))
 		.pipe(gulpIf(isMinify, autoprefixer({})))
 		.pipe(gulpIf(isMinify, cleanCSS({ level: 1 })))
-		.pipe(gulpIf(isMapForCss, sourcemaps.write()))
+		.pipe(gulpIf(isMapForDevelop, sourcemaps.write()))
 		.pipe(gulp.dest('./build/css'))
 		.pipe(browserSync.stream())
 }
@@ -37,6 +40,17 @@ function styles() {
 function images() {
 	return gulp.src('./src/img/**/*')
 		.pipe(gulp.dest('./build/img'))
+}
+
+function scripts() {
+	return gulp.src('./src/js/**/*.js')
+		.pipe(gulpIf(isMapForDevelop, sourcemaps.init()))
+		.pipe(gulpIf(isMinify, babel()))
+		.pipe(gulpIf(isMinify, uglify()))
+		.pipe(concat('main.js'))
+		.pipe(gulpIf(isMapForDevelop, sourcemaps.write()))
+		.pipe(gulp.dest('./build/js'))
+		.pipe(browserSync.stream())
 }
 
 function watch() {
@@ -47,12 +61,13 @@ function watch() {
 	})
 	gulp.watch('./src/css/**/*.less', styles)
 	gulp.watch('./src/**/*.html', html)
+	gulp.watch('./src/js/**/*.js', scripts)
 }
 
 
 // gulp.series - выполняет таски по очереди (завершится один, перейдет к другому)
 // gulp.parallel - выполняет одновременно (нач. и заверш. в любой последовательности)
-let build = gulp.parallel(html, styles, images)
+let build = gulp.parallel(html, styles, images, scripts)
 let buildWithClean = gulp.series(clean, build)
 
 let watchDev = gulp.series(buildWithClean, watch)
