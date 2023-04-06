@@ -250,28 +250,20 @@
 							/>
 						</svg>
 					</button>
-					<div class="slider__photos">
-						<img
-							class="slider__photo slider__photo_show"
-							src="./img/slider/Rectangle7.jpg"
-							alt="img"
-						/>
-						<img
-							class="slider__photo"
-							src="./img/slider/Rectangle1.jpg"
-							alt="img"
-						/>
-						<img
-							class="slider__photo"
-							src="./img/slider/Rectangle11.jpg"
-							alt="img"
-						/>
-						<img
-							class="slider__photo"
-							src="./img/slider/Rectangle12.jpg"
-							alt="img"
-						/>
-					</div>
+					<ul class="slider__photos">
+						<li class="slider__photo slider__photo_show">
+							<img src="./img/slider/Rectangle7.jpg" alt="img" />
+						</li>
+						<li class="slider__photo">
+							<img src="./img/slider/Rectangle1.jpg" alt="img" />
+						</li>
+						<li class="slider__photo">
+							<img src="./img/slider/Rectangle11.jpg" alt="img" />
+						</li>
+						<li class="slider__photo">
+							<img src="./img/slider/Rectangle12.jpg" alt="img" />
+						</li>
+					</ul>
 					<button class="sliderBtn sliderBtn_right btnRight btnReset">
 						<svg
 							width="60"
@@ -422,9 +414,10 @@
 							class="footerEmail__input"
 							type="email"
 							name="email"
+							data-rule="email"
 							placeholder="E-MAIl"
 						/>
-						<button class="footerEmail__btn btnReset">
+						<button class="footerEmail__btn btnReset" type="submit">
 							<svg
 								width="24"
 								height="24"
@@ -441,6 +434,7 @@
 								/>
 							</svg>
 						</button>
+						<div class="errFieldMessage"></div>
 					</form>
 				</div>
 			</div>
