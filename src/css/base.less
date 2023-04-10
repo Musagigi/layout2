@@ -1,0 +1,121 @@
+html {
+	font-size: 10px;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p,
+ul,
+li {
+	margin: 0;
+	font-size: 100%;
+	font-weight: normal;
+}
+
+ul,
+ol {
+	list-style: none;
+	padding: 0;
+}
+
+h1,
+.h1 {
+	font-size: 96px;
+	font-weight: 600;
+	line-height: 116px;
+}
+
+h2,
+.h2 {
+	font-size: 36px;
+	font-weight: 800;
+	line-height: 43px;
+}
+
+h3,
+.h3 {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: @color_darkGrey;
+}
+
+.body {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1230px;
+	padding: @offset @offset_one_side;
+}
+
+.sg-row {
+	.row()
+}
+
+@media screen and (max-width: 576px) {
+	// html {
+	// 	font-size: 8px;
+	// }
+
+	.container {
+		padding: 10px @offset_one_side;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.container {
+		padding: 10px (@offset_one_side / 2);
+	}
+}

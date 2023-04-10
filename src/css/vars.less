@@ -1,0 +1,72 @@
+@columns: 12;
+@offset: 30px;
+@offset_one_side: (@offset / 2);
+@offset_outer_l: 130px;
+@offset_outer_m: 60px;
+@offset_outer_s: 30px;
+@path_img: '../img/';
+
+@color_white: #fff;
+@color_darkWhite: #c6d9e7;
+@color_black: #000;
+@color_grey: #838383;
+@color_darkGrey: #1D1D1F;
+
+.row () {
+	display: flex;
+	flex-wrap: wrap;
+	// margin: 0 -@offset_one_side;
+}
+
+.col (@val, @clmn: @columns, @ofse: @offset) {
+	@width: (100% / @clmn * @val);
+	width: calc(@width - @ofse);
+	// box-sizing: border-box;
+	word-wrap: break-word;
+}
+
+.sizeBtn(@small, @large) {
+	width: clamp(@small, 5vw, @large);
+	height: clamp(@small, 5vw, @large);
+}
+
+.fontSizeTitle(@small, @large) {
+	font-size: clamp(@small, 10vw, @large);
+}
+
+.lineHeightTitle(@small, @large) {
+	line-height: clamp(@small, 12vw, @large);
+}
+
+.btnReset {
+	border: 0;
+	padding: 0;
+	background: transparent;
+	cursor: pointer;
+}
+
+.btn {
+	display: inline-block;
+	min-width: 180px;
+	border: 0;
+	padding: 20px 15px;
+	// border-radius: 30px;
+	// text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+	background-color: @color_white;
+}
+
+.btnFont {
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 21px;
+	color: @color_darkGrey;
+}
+
+
+// .gradientText () {
+// 	background: linear-gradient(90deg, #C3956A 3.65%, #A24F03 100%);
+// 	-webkit-text-fill-color: transparent;
+// 	-webkit-background-clip: text;
+// }

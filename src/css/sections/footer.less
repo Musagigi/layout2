@@ -1,0 +1,122 @@
+.footer {
+	padding-top: 60px;
+	padding-bottom: 90px;
+	background: @color_darkGrey;
+	color: @color_white;
+}
+
+.footerBlock {
+	&:extend(.sg-row);
+	justify-content: space-between;
+}
+
+.footerContacts {
+	.col(6);
+
+	&__logo {
+		display: inline-block;
+		margin-bottom: 48px;
+	}
+
+	&__adrs {
+		color: @color_grey;
+		line-height: 150%;
+		margin-bottom: 30px;
+	}
+}
+
+.social {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+
+	&__link {
+		display: block;
+		width: 40px;
+		height: 40px;
+		color: @color_white;
+		transition: color .3s ease;
+
+		svg {
+			width: 100%;
+			height: 100%;
+			fill: currentColor;
+		}
+	}
+
+	&__link:hover {
+		color: @color_darkWhite
+	}
+}
+
+.footerEmail {
+	.col(6);
+
+	&__title {
+		font-weight: 500;
+		font-size: 32px;
+		line-height: 130%;
+		margin-bottom: 10px;
+	}
+
+	&__form {
+		position: relative;
+	}
+
+	&__input {
+		width: 100%;
+		padding: 24px 0;
+		padding-right: 30px;
+		color: @color_white;
+		font-weight: 700;
+		font-size: 13px;
+		line-height: 16px;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		// cursor: pointer;
+		border: none;
+		outline: none;
+		background: transparent;
+		border-bottom: 1px solid @color_grey;
+		background-image: linear-gradient(to bottom, @color_grey 1px, transparent 1px);
+		transition: .3s;
+
+		&:not(:focus) {
+			border-color: transparent;
+			background-position-y: 62px;
+		}
+	}
+
+	&__btn {
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		right: 0;
+		top: 21px;
+
+		svg {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+.errFieldMessage {
+	color: #ff0000;
+}
+
+@media screen and (max-width: 575px) {
+	.footerBlock {
+		display: block;
+	}
+
+	.footerContacts {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	.footerEmail {
+		width: 100%;
+	}
+}

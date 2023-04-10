@@ -1,0 +1,40 @@
+.hero {
+	color: @color_white;
+	height: 100vh;
+	padding-top: 270px;
+	min-height: 900px;
+	background: url('@{path_img}hero/Rectangle1.jpg') center/ cover no-repeat;
+
+	&__title {
+		.fontSizeTitle(44px, 96px);
+		.lineHeightTitle(56px, 116px);
+		max-width: 930px;
+		margin-bottom: 30px;
+	}
+
+	&__text {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 150%;
+		max-width: 468px;
+		margin-bottom: 50px;
+	}
+
+	&__button {
+		transition: 1s;
+	}
+
+	&__button:hover {
+		color: @color_white;
+		background-color: @color_black;
+	}
+}
+
+
+@media screen and (max-width: 575px) {
+	.hero {
+		padding-top: 200px;
+		height: auto;
+		min-height: auto;
+	}
+}

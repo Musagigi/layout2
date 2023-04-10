@@ -1,0 +1,45 @@
+.previewVideo {
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+
+	video {
+		display: block;
+		width: 100%;
+		max-height: 630px;
+		object-fit: cover;
+	}
+
+	&__play {
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: @color_white;
+
+		&_hidden {
+			display: none;
+		}
+	}
+
+	&__play circle {
+		fill: currentColor;
+		transition: color .3s ease;
+	}
+
+	&__play circle:hover {
+		color: @color_darkWhite;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.previewVideo__play {
+		width: 60px;
+
+		svg {
+			width: inherit;
+		}
+	}
+}
