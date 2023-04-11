@@ -1,11 +1,14 @@
 {
 	"name": "practice",
 	"version": "1.0.0",
+	"homepage": "https://musagigi.github.io/layout2/",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
 		"build": "gulp build --mini",
-		"dev": "gulp dev --map"
+		"dev": "gulp dev --map",
+		"deploy": "gh-pages -d build",
+		"predeploy": "npm run build"
 	},
 	"keywords": [],
 	"author": "",
@@ -26,6 +29,7 @@
 	},
 	"browserslist": "> 0.5%",
 	"dependencies": {
+		"gh-pages": "^5.0.0",
 		"normalize.css": "^8.0.1"
 	}
 }
