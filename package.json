@@ -5,8 +5,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"build": "gulp build --mini",
 		"dev": "gulp dev --map",
+		"build": "gulp build --mini",
 		"deploy": "gh-pages -d build",
 		"predeploy": "npm run build"
 	},
