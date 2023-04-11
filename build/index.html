@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -20,7 +20,10 @@
 					<a class="logo">Company</a>
 					<div class="headerMenu">
 						<div class="headerMenu__dropdown dropdown">
-							<button class="dropdown__searchBtn btnReset">
+							<button
+								class="dropdown__searchBtn btnReset"
+								aria-label="click button"
+							>
 								<svg
 									width="24"
 									height="24"
@@ -47,6 +50,7 @@
 							<input
 								class="dropdown__searchField"
 								type="search"
+								aria-label="search"
 								placeholder="введите текст..."
 							/>
 						</div>
@@ -181,7 +185,7 @@
 							<div class="listItem__img">
 								<img
 									src="./img/portfolio/Rectangle5.jpg"
-									alt="img"
+									alt="img1"
 								/>
 							</div>
 							<div class="listItem__content">
@@ -201,7 +205,7 @@
 							<div class="listItem__img">
 								<img
 									src="./img/portfolio/Rectangle6.jpg"
-									alt="img"
+									alt="img2"
 								/>
 							</div>
 							<div class="listItem__content">
@@ -246,21 +250,30 @@
 				<div class="slider__slide">
 					<ul class="slider__photos">
 						<li class="slider__photo slider__photo_show">
-							<img src="./img/slider/Rectangle7.jpg" alt="img" />
+							<img src="./img/slider/Rectangle7.jpg" alt="img3" />
 						</li>
 						<li class="slider__photo">
-							<img src="./img/slider/Rectangle1.jpg" alt="img" />
+							<img src="./img/slider/Rectangle1.jpg" alt="img4" />
 						</li>
 						<li class="slider__photo">
-							<img src="./img/slider/Rectangle11.jpg" alt="img" />
+							<img
+								src="./img/slider/Rectangle11.jpg"
+								alt="img5"
+							/>
 						</li>
 						<li class="slider__photo">
-							<img src="./img/slider/Rectangle12.jpg" alt="img" />
+							<img
+								src="./img/slider/Rectangle12.jpg"
+								alt="img6"
+							/>
 						</li>
 					</ul>
 				</div>
 				<div class="slider__buttons sliderBtn">
-					<button class="sliderBtn__left sliderBtn_size btnReset">
+					<button
+						class="sliderBtn__left sliderBtn_size btnReset"
+						aria-label="button left"
+					>
 						<svg
 							width="60"
 							height="60"
@@ -276,7 +289,10 @@
 							/>
 						</svg>
 					</button>
-					<button class="sliderBtn__right sliderBtn_size btnReset">
+					<button
+						class="sliderBtn__right sliderBtn_size btnReset"
+						aria-label="button right"
+					>
 						<svg
 							width="60"
 							height="60"
@@ -428,9 +444,14 @@
 							name="email"
 							data-rule="email"
 							placeholder="E-MAIl"
+							aria-label="input email"
 							required
 						/>
-						<button class="footerEmail__btn btnReset" type="submit">
+						<button
+							class="footerEmail__btn btnReset"
+							type="submit"
+							aria-label="submit email"
+						>
 							<svg
 								width="24"
 								height="24"
