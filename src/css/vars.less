@@ -1,6 +1,7 @@
 @columns: 12;
 @offset: 30px;
 @offsetOneSide: (@offset / 2);
+@offsetVertical: 95px;
 @path_img: '../img/';
 
 @colorWhite: #fff;
@@ -12,19 +13,11 @@
 .row () {
 	display: flex;
 	flex-wrap: wrap;
-	// margin: 0 -offsetOneSide;
-}
-
-.container (@offsetVertical: 0, @offsetHorizontal: offsetOneSide) {
-	margin: 0 auto;
-	max-width: 1230px;
-	padding: @offsetVertical @offsetHorizontal;
 }
 
 .col (@val, @clmn: @columns, @ofse: @offset) {
 	@width: (100% / @clmn * @val);
 	width: calc(@width - @ofse);
-	// box-sizing: border-box;
 	word-wrap: break-word;
 }
 

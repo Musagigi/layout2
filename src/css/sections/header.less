@@ -5,15 +5,19 @@
 	left: 0;
 	width: 100%;
 	color: @colorWhite;
-}
 
-.headerContainer {
-	&:extend(.sg-row);
-	align-items: center;
-	justify-content: space-between;
-	padding: 40px @offsetOneSide;
-	margin: 0 auto;
-	max-width: 1230px;
+	&__content {
+		&:extend(.sg-row);
+		align-items: center;
+		justify-content: space-between;
+		padding: 40px 0;
+
+		&_container {
+			margin: 0 auto;
+			max-width: 1230px;
+			padding: 0 offsetOneSide;
+		}
+	}
 }
 
 .logo {
