@@ -1,20 +1,20 @@
 .servicesItem {
-	&:extend(.sg-row);
+	display: flex;
+	gap: 50px;
 	border-top: 1px solid #1d1d1f66;
 	padding: 40px 0;
 
 
 	&__title {
-		.col(6);
+		flex-basis: 50%;
 		font-weight: 500;
 		font-size: 32px;
 		line-height: 130%;
 		color: @colorDarkGrey;
-		margin-right: 50px;
 	}
 
 	&__text {
-		.col(6);
+		flex-basis: 50%;
 		line-height: 150%;
 		color: @colorGrey;
 	}

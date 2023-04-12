@@ -14,85 +14,90 @@
 		<script src="js/main.js" defer></script>
 	</head>
 	<body class="body">
-		<header class="header">
-			<div class="header__content header__content_container">
-				<a class="logo">Company</a>
-				<div class="headerMenu">
-					<div class="headerMenu__dropdown dropdown">
-						<button
-							class="dropdown__searchBtn btnReset"
-							aria-label="click button"
-						>
-							<svg
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
+		<div class="container homePage">
+			<header class="header">
+				<div class="header__content">
+					<a class="logo">Company</a>
+					<div class="headerMenu">
+						<div class="headerMenu__dropdown dropdown">
+							<button
+								class="dropdown__searchBtn btnReset"
+								aria-label="click button"
 							>
-								<circle
-									cx="11.7666"
-									cy="11.7666"
-									r="8.98856"
-									stroke-width="1.5"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-								<path
-									d="M18.0183 18.4851L21.5423 22"
-									stroke-width="1.5"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-							</svg>
-						</button>
-						<input
-							class="dropdown__searchField"
-							type="search"
-							aria-label="search"
-							placeholder="введите текст..."
-						/>
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<circle
+										cx="11.7666"
+										cy="11.7666"
+										r="8.98856"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+									<path
+										d="M18.0183 18.4851L21.5423 22"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+							<input
+								class="dropdown__searchField"
+								type="search"
+								aria-label="search"
+								placeholder="введите текст..."
+							/>
+						</div>
+						<div class="headerMenu__burger burger">
+							<span class="burger__middleLine middleLine"></span>
+						</div>
+						<nav class="headerMenu__nav navigate">
+							<ul class="navigate__list">
+								<li class="navigate__item">
+									<a class="navigate__link" href="#"
+										>Portfolio</a
+									>
+								</li>
+								<li class="navigate__item">
+									<a class="navigate__link" href="#">Team</a>
+								</li>
+								<li class="navigate__item">
+									<a class="navigate__link" href="#">About</a>
+								</li>
+								<li class="navigate__item">
+									<a class="navigate__link" href="#">Blog</a>
+								</li>
+								<li class="navigate__item">
+									<a class="navigate__link" href="#"
+										>Concat</a
+									>
+								</li>
+							</ul>
+						</nav>
 					</div>
-					<div class="headerMenu__burger burger">
-						<span class="burger__middleLine middleLine"></span>
-					</div>
-					<nav class="headerMenu__nav navigate">
-						<ul class="navigate__list">
-							<li class="navigate__item">
-								<a class="navigate__link" href="#">Portfolio</a>
-							</li>
-							<li class="navigate__item">
-								<a class="navigate__link" href="#">Team</a>
-							</li>
-							<li class="navigate__item">
-								<a class="navigate__link" href="#">About</a>
-							</li>
-							<li class="navigate__item">
-								<a class="navigate__link" href="#">Blog</a>
-							</li>
-							<li class="navigate__item">
-								<a class="navigate__link" href="#">Concat</a>
-							</li>
-						</ul>
-					</nav>
 				</div>
-			</div>
-		</header>
+			</header>
 
-		<main>
-			<section class="hero hero_backColor">
-				<div class="container">
-					<h1 class="hero__title">
-						We&nbsp;produce the&nbsp;best products
-					</h1>
-					<p class="hero__text">
-						Mattis quam, lectus et justo amet, tortor, lectus
-						dapibus est. Habitasse efficitur sodales vel est.
-					</p>
-					<button class="hero__button btn btnFont">Button</button>
-				</div>
-			</section>
-			<div class="container">
+			<main class="homePage">
+				<section class="hero hero_backColor">
+					<div class="container">
+						<h1 class="hero__title">
+							We&nbsp;produce the&nbsp;best products
+						</h1>
+						<p class="hero__text">
+							Mattis quam, lectus et justo amet, tortor, lectus
+							dapibus est. Habitasse efficitur sodales vel est.
+						</p>
+						<button class="hero__button btn btnFont">Button</button>
+					</div>
+				</section>
+
 				<section class="about">
 					<div class="statistic">
 						<div class="statistic__group">
@@ -225,73 +230,79 @@
 						>
 					</blockquote>
 				</section>
-			</div>
-			<div class="slider">
-				<div class="slider__wrapper"></div>
-				<div class="slider__slide">
-					<ul class="slider__photos">
-						<li class="slider__photo slider__photo_show">
-							<img src="./img/slider/Rectangle7.jpg" alt="img3" />
-						</li>
-						<li class="slider__photo">
-							<img src="./img/slider/Rectangle1.jpg" alt="img4" />
-						</li>
-						<li class="slider__photo">
-							<img
-								src="./img/slider/Rectangle11.jpg"
-								alt="img5"
-							/>
-						</li>
-						<li class="slider__photo">
-							<img
-								src="./img/slider/Rectangle12.jpg"
-								alt="img6"
-							/>
-						</li>
-					</ul>
-				</div>
-				<div class="slider__buttons sliderBtn">
-					<button
-						class="sliderBtn__left sliderBtn_size btnReset"
-						aria-label="button left"
-					>
-						<svg
-							width="60"
-							height="60"
-							viewBox="0 0 60 60"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
+
+				<div class="slider">
+					<div class="slider__wrapper"></div>
+					<div class="slider__slide">
+						<ul class="slider__photos">
+							<li class="slider__photo slider__photo_show">
+								<img
+									src="./img/slider/Rectangle7.jpg"
+									alt="img3"
+								/>
+							</li>
+							<li class="slider__photo">
+								<img
+									src="./img/slider/Rectangle1.jpg"
+									alt="img4"
+								/>
+							</li>
+							<li class="slider__photo">
+								<img
+									src="./img/slider/Rectangle11.jpg"
+									alt="img5"
+								/>
+							</li>
+							<li class="slider__photo">
+								<img
+									src="./img/slider/Rectangle12.jpg"
+									alt="img6"
+								/>
+							</li>
+						</ul>
+					</div>
+					<div class="slider__buttons sliderBtn">
+						<button
+							class="sliderBtn__left sliderBtn_size btnReset"
+							aria-label="button left"
 						>
-							<path
-								d="M40 12.5L22.5 30L40 47.5"
-								stroke-width="1.5"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							/>
-						</svg>
-					</button>
-					<button
-						class="sliderBtn__right sliderBtn_size btnReset"
-						aria-label="button right"
-					>
-						<svg
-							width="60"
-							height="60"
-							viewBox="0 0 60 60"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
+							<svg
+								width="60"
+								height="60"
+								viewBox="0 0 60 60"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M40 12.5L22.5 30L40 47.5"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+						<button
+							class="sliderBtn__right sliderBtn_size btnReset"
+							aria-label="button right"
 						>
-							<path
-								d="M20 12.5L37.5 30L20 47.5"
-								stroke-width="1.5"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							/>
-						</svg>
-					</button>
+							<svg
+								width="60"
+								height="60"
+								viewBox="0 0 60 60"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M20 12.5L37.5 30L20 47.5"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+					</div>
 				</div>
-			</div>
-			<div class="container">
+
 				<section class="services">
 					<ul class="services__list">
 						<li class="services__item servicesItem">
@@ -334,11 +345,9 @@
 						</li>
 					</ul>
 				</section>
-			</div>
-		</main>
+			</main>
 
-		<footer class="footer">
-			<div class="footerBlock">
+			<footer class="footer">
 				<div class="footerContacts">
 					<a class="footerContacts__logo logo">Company</a>
 					<address class="footerContacts__adrs">
@@ -451,7 +460,7 @@
 						<div class="errFieldMessage"></div>
 					</form>
 				</div>
-			</div>
-		</footer>
+			</footer>
+		</div>
 	</body>
 </html>

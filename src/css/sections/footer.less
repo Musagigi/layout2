@@ -1,14 +1,21 @@
 .footer {
+	position: relative;
 	background: @colorDarkGrey;
 	color: @colorWhite;
-}
-
-.footerBlock {
 	&:extend(.sg-row);
 	justify-content: space-between;
-	margin: 0 auto;
-	max-width: 1230px;
-	padding: @offset + 60px @offsetOneSide @offset + 95px @offsetOneSide;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: calc((-100vw + 100%) / 2);
+		background-color: @colorDarkGrey;
+		z-index: -1;
+		width: 100vw;
+	}
 }
 
 .footerContacts {

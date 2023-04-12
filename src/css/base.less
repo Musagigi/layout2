@@ -94,12 +94,17 @@ body {
 	margin: 0 auto;
 }
 
-// объявить переменную с вертикальным отступом, добавить ко всем блокам
-// убрать у каждого объекта контейнер, обернуть одним контейнером все объекты
+.homePage {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 190px;
+}
+
 .container {
 	margin: 0 auto;
 	max-width: 1230px;
-	padding: 0 offsetOneSide;
+	padding: 0 @offsetOneSide;
 }
 
 .sg-row {
@@ -107,17 +112,13 @@ body {
 }
 
 @media screen and (max-width: 576px) {
-	// html {
-	// 	font-size: 8px;
-	// }
-
-	// .container {
-	// 	padding: 10px offsetOneSide;
-	// }
+	html {
+		font-size: 8px;
+	}
 }
 
 @media screen and (max-width: 460px) {
 	// .container {
-	// 	padding: 10px (offsetOneSide / 2);
+	// 	padding: 0px (offsetOneSide / 2);
 	// }
 }
