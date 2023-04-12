@@ -1,9 +1,4 @@
-.portfolio {
-	padding-top: @offset_outer_l;
-	margin-bottom: @offset_outer_l;
-}
-
-.listItem {
+.portfolioItem {
 	&:extend(.sg-row);
 	align-items: center;
 	justify-content: space-between;
@@ -49,17 +44,12 @@
 	}
 }
 
-.listItem:not(:last-child) {
+.portfolioItem:not(:last-child) {
 	margin-bottom: 120px;
 }
 
 @media screen and (max-width: 767px) {
-	.portfolio {
-		padding-top: @offset_outer_m;
-		margin-bottom: @offset_outer_m;
-	}
-
-	.listItem {
+	.portfolioItem {
 		display: block;
 
 		&__img {
@@ -76,7 +66,7 @@
 		}
 	}
 
-	.listItem:not(:last-child) {
+	.portfolioItem:not(:last-child) {
 		margin-bottom: 60px;
 	}
 }

@@ -1,6 +1,4 @@
 .footer {
-	padding-top: 60px;
-	padding-bottom: 90px;
 	background: @color_darkGrey;
 	color: @color_white;
 }
@@ -8,6 +6,9 @@
 .footerBlock {
 	&:extend(.sg-row);
 	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 1230px;
+	padding: @offset + 60px @offset_one_side @offset + 95px @offset_one_side;
 }
 
 .footerContacts {
