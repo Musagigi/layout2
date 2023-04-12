@@ -1,6 +1,6 @@
 .footer {
-	background: @color_darkGrey;
-	color: @color_white;
+	background: @colorDarkGrey;
+	color: @colorWhite;
 }
 
 .footerBlock {
@@ -8,7 +8,7 @@
 	justify-content: space-between;
 	margin: 0 auto;
 	max-width: 1230px;
-	padding: @offset + 60px @offset_one_side @offset + 95px @offset_one_side;
+	padding: @offset + 60px @offsetOneSide @offset + 95px @offsetOneSide;
 }
 
 .footerContacts {
@@ -20,7 +20,7 @@
 	}
 
 	&__adrs {
-		color: @color_grey;
+		color: @colorGrey;
 		line-height: 150%;
 		margin-bottom: 30px;
 	}
@@ -35,7 +35,7 @@
 		display: block;
 		width: 40px;
 		height: 40px;
-		color: @color_white;
+		color: @colorWhite;
 		transition: color .3s ease;
 
 		svg {
@@ -46,7 +46,7 @@
 	}
 
 	&__link:hover {
-		color: @color_darkWhite
+		color: @colorDarkWhite
 	}
 }
 
@@ -68,7 +68,7 @@
 		width: 100%;
 		padding: 24px 0;
 		padding-right: 30px;
-		color: @color_white;
+		color: @colorWhite;
 		font-weight: 700;
 		font-size: 13px;
 		line-height: 16px;
@@ -78,8 +78,8 @@
 		border: none;
 		outline: none;
 		background: transparent;
-		border-bottom: 1px solid @color_grey;
-		background-image: linear-gradient(to bottom, @color_grey 1px, transparent 1px);
+		border-bottom: 1px solid @colorGrey;
+		background-image: linear-gradient(to bottom, @colorGrey 1px, transparent 1px);
 		transition: .3s;
 
 		&:not(:focus) {

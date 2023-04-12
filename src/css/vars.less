@@ -1,21 +1,24 @@
 @columns: 12;
 @offset: 30px;
-@offset_one_side: (@offset / 2);
-@offset_outer_l: 130px;
-@offset_outer_m: 60px;
-@offset_outer_s: 30px;
+@offsetOneSide: (@offset / 2);
 @path_img: '../img/';
 
-@color_white: #fff;
-@color_darkWhite: #c6d9e7;
-@color_black: #000;
-@color_grey: #838383;
-@color_darkGrey: #1D1D1F;
+@colorWhite: #fff;
+@colorDarkWhite: #c6d9e7;
+@colorBlack: #000;
+@colorGrey: #838383;
+@colorDarkGrey: #1D1D1F;
 
 .row () {
 	display: flex;
 	flex-wrap: wrap;
-	// margin: 0 -@offset_one_side;
+	// margin: 0 -offsetOneSide;
+}
+
+.container (@offsetVertical: 0, @offsetHorizontal: offsetOneSide) {
+	margin: 0 auto;
+	max-width: 1230px;
+	padding: @offsetVertical @offsetHorizontal;
 }
 
 .col (@val, @clmn: @columns, @ofse: @offset) {
@@ -54,14 +57,14 @@
 	// text-decoration: none;
 	cursor: pointer;
 	text-align: center;
-	background-color: @color_white;
+	background-color: @colorWhite;
 }
 
 .btnFont {
 	font-weight: 600;
 	font-size: 17px;
 	line-height: 21px;
-	color: @color_darkGrey;
+	color: @colorDarkGrey;
 }
 
 
