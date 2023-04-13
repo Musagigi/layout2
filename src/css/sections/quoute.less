@@ -12,10 +12,8 @@
 	max-width: 820px;
 
 	&__text {
+		.fontStyle(36px, 500, 150%);
 		color: @colorDarkGrey;
-		font-weight: 500;
-		font-size: 36px;
-		line-height: 150%;
 		margin-bottom: 30px;
 	}
 
@@ -26,17 +24,19 @@
 
 @media screen and (max-width: 767px) {
 	.quoute {
-		// padding-bottom: @offset_outer_m;
 
 		&__title {
-			// margin-bottom: @offset_outer_s;
+			margin-bottom: @offsetOneSide;
 		}
+	}
+
+	.quouteContent__text {
+		font-size: 28px;
 	}
 }
 
 @media screen and (max-width: 575px) {
 	.quouteContent__text {
-		.fontSizeTitle(26px, 36px);
-		.lineHeightTitle(40px, 150%);
+		font-size: 20px;
 	}
 }
