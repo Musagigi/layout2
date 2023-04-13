@@ -25,11 +25,6 @@
 	word-wrap: break-word;
 }
 
-.sizeBtn(@small, @large) {
-	width: clamp(@small, 5vw, @large);
-	height: clamp(@small, 5vw, @large);
-}
-
 .fontSizeTitle(@small, @large) {
 	font-size: clamp(@small, 10vw, @large);
 }
@@ -38,10 +33,15 @@
 	line-height: clamp(@small, 12vw, @large);
 }
 
-.fontStyle(@fWeight, @fSize, @lHeight) {
-	font-weight: @fWeight;
+.fontStyle(@fSize, @fWeight, @lHeight) {
 	font-size: @fSize;
+	font-weight: @fWeight;
 	line-height: @lHeight;
+}
+
+.sizeBtn(@small, @large) {
+	width: clamp(@small, 5vw, @large);
+	height: clamp(@small, 5vw, @large);
 }
 
 .btnReset {
@@ -54,22 +54,14 @@
 .btn {
 	display: inline-block;
 	min-width: 180px;
-	border: 0;
 	padding: 20px 15px;
+	border: 0;
 	// border-radius: 30px;
-	// text-decoration: none;
 	cursor: pointer;
 	text-align: center;
 	background-color: @colorWhite;
+	.fontStyle(17px, 600, 21px);
 }
-
-.btnFont {
-	font-weight: 600;
-	font-size: 17px;
-	line-height: 21px;
-	color: @colorDarkGrey;
-}
-
 
 // .gradientText () {
 // 	background: linear-gradient(90deg, #C3956A 3.65%, #A24F03 100%);

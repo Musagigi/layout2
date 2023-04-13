@@ -13,11 +13,11 @@
 	&__play {
 		width: 100px;
 		height: 100px;
+		color: @colorWhite;
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		color: @colorWhite;
 
 		&_hidden {
 			display: none;
@@ -35,11 +35,17 @@
 }
 
 @media screen and (max-width: 767px) {
-	.previewVideo__play {
+	.preview__play {
 		width: 60px;
+		height: 60px;
 
 		svg {
 			width: inherit;
+			height: inherit;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 		}
 	}
 }

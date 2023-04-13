@@ -1,27 +1,21 @@
 .hero {
-	color: @colorWhite;
-	height: 100vh;
-	padding-top: 270px;
-	min-height: 900px;
 	position: relative;
-	// overflow: hidden;
+	padding-top: 270px;
+	height: 100vh;
+	min-height: 900px;
+	color: @colorWhite;
 
 	&::before {
 		content: '';
+		width: 100vw;
 		position: absolute;
 		top: 0;
-		right: 0;
 		bottom: 0;
 		left: calc((-100vw + 100%) / 2);
-		width: 100vw;
+		z-index: -1;
 		background-color: @colorGrey;
 		background: url('@{path_img}hero/Rectangle1.jpg') center/ cover no-repeat;
-		z-index: -1;
 	}
-
-	// &_backColor {
-	// 	background-color: #000;
-	// }
 
 	&__title {
 		.fontSizeTitle(44px, 96px);
@@ -31,15 +25,14 @@
 	}
 
 	&__text {
-		font-size: 16px;
-		font-weight: 400;
-		line-height: 150%;
+		.fontStyle(16px, 400, 150%);
 		max-width: 468px;
 		margin-bottom: 50px;
 	}
 
 	&__button {
-		transition: 1s;
+		transition: .5s;
+		color: @colorDarkGrey;
 	}
 
 	&__button:hover {
@@ -49,10 +42,18 @@
 }
 
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 576px) {
 	.hero {
-		padding-top: 200px;
+		padding-top: 220px;
 		height: auto;
 		min-height: auto;
+
+		&__text {
+			margin-bottom: 30px;
+		}
+
+		&__button {
+			margin-bottom: 20px;
+		}
 	}
 }

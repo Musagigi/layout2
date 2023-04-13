@@ -4,16 +4,14 @@
 }
 
 .statistic {
-	.col(6);
+	flex-basis: 50%;
 
 	&__group:not(:last-child) {
 		margin-bottom: 60px;
 	}
 
 	&__number {
-		font-weight: 300;
-		font-size: 64px;
-		line-height: 140%;
+		.fontStyle(64px, 300, 140%)
 	}
 
 	&__text {
@@ -23,7 +21,7 @@
 }
 
 .specific {
-	.col(6);
+	flex-basis: 50%;
 
 	&__title {
 		font-weight: 700;
@@ -44,24 +42,17 @@
 @media screen and (max-width: 767px) {
 	.about {
 		display: block;
-		// padding-top: @offset_outer_m;
-		// margin-bottom: @offset_outer_m;
 	}
 
-	.left {
-		width: 100%;
+	.statistic {
 		margin-bottom: 30px;
-	}
-
-	.right {
-		width: 100%;
 	}
 }
 
 @media screen and (max-width: 575px) {
 
-	.left__group:not(:last-child),
-	.right__title {
-		// margin-bottom: @offset_outer_s;
+	.statistic__group:not(:last-child),
+	.specific__title {
+		margin-bottom: @offsetOneSide;
 	}
 }
