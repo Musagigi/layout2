@@ -1,10 +1,10 @@
 .header {
-	// position: fixed;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	color: @colorWhite;
+	z-index: 2;
 
 	&__content {
 		&:extend(.sg-row);
@@ -15,11 +15,8 @@
 }
 
 .logo {
-	font-weight: 500;
-	font-size: 32px;
-	line-height: 130%;
+	.fontStyle(500, 32px, 130%);
 	margin-right: 35px;
-	color: @colorWhite;
 }
 
 .headerMenu {
@@ -56,7 +53,7 @@
 	}
 
 	&__searchBtn:hover {
-		color: #000;
+		color: #cec4c4;
 	}
 
 	&__searchField {
@@ -73,13 +70,6 @@
 	}
 }
 
-.btnReset {
-	border: 0;
-	padding: 0;
-	background: transparent;
-	cursor: pointer;
-}
-
 .navigate {
 
 	&__list {
@@ -88,9 +78,7 @@
 	}
 
 	&__link {
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 19px;
+		.fontStyle(400, 16px, 19px);
 		transition: color .3s ease;
 	}
 
@@ -100,7 +88,7 @@
 }
 
 @media screen and (max-width: 767px) {
-	.headerContainer {
+	.header__content {
 		flex-direction: column;
 		row-gap: 20px;
 	}
@@ -111,9 +99,10 @@
 }
 
 @media screen and (max-width: 575px) {
-	.headerContainer {
+	.header__content {
 		flex-direction: row;
 		row-gap: 10px;
+		padding: 20px @offsetOneSide;
 	}
 
 	.headerMenu {

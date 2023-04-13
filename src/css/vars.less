@@ -15,6 +15,10 @@
 	flex-wrap: wrap;
 }
 
+.sg-row {
+	.row()
+}
+
 .col (@val, @clmn: @columns, @ofse: @offset) {
 	@width: (100% / @clmn * @val);
 	width: calc(@width - @ofse);
@@ -32,6 +36,12 @@
 
 .lineHeightTitle(@small, @large) {
 	line-height: clamp(@small, 12vw, @large);
+}
+
+.fontStyle(@fWeight, @fSize, @lHeight) {
+	font-weight: @fWeight;
+	font-size: @fSize;
+	line-height: @lHeight;
 }
 
 .btnReset {
