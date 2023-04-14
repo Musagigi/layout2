@@ -3,7 +3,6 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	color: @colorWhite;
 	z-index: 2;
 
 	&__content {
@@ -15,7 +14,7 @@
 }
 
 .logo {
-	.fontStyle(32px, 500, 130%);
+	.fontStyle(32px, 500, 130%, @colorWhite);
 	margin-right: 35px;
 }
 
@@ -78,7 +77,7 @@
 	}
 
 	&__link {
-		.fontStyle(16px, 400, 19px);
+		.fontStyle(16px, 400, 19px, @colorWhite);
 		transition: color .3s ease;
 	}
 
