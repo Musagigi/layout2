@@ -7,10 +7,7 @@
 
 	&__title {
 		flex-basis: 50%;
-		font-weight: 500;
-		font-size: 32px;
-		line-height: 130%;
-		color: @colorDarkGrey;
+		.fontStyle(32px, 500, 130%, @colorDarkGrey);
 	}
 
 	&__text {
@@ -19,8 +16,6 @@
 		color: @colorGrey;
 	}
 }
-
-@media screen and (max-width: 767px) {}
 
 @media screen and (max-width: 575px) {
 	.servicesItem {

@@ -33,10 +33,11 @@
 	line-height: clamp(@small, 12vw, @large);
 }
 
-.fontStyle(@fSize, @fWeight, @lHeight) {
+.fontStyle(@fSize, @fWeight, @lHeight, @fColor: @colorBlack) {
 	font-size: @fSize;
 	font-weight: @fWeight;
 	line-height: @lHeight;
+	color: @fColor;
 }
 
 .sizeBtn(@small, @large) {
