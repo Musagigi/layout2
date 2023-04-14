@@ -5,7 +5,7 @@ const regexpEmail = new RegExp('([A-zА-я])+([0-9\-_\+\.])*([A-zА-я0-9\-_\+\.
 
 
 formEmail.addEventListener('submit', function (event) {
-	console.log('test');
+
 	if (!regexpEmail.test(inputFieldEmail.value)) {
 		errFieldMessage.innerText = 'Введите корректный email'
 		event.preventDefault()
