@@ -10,6 +10,10 @@
 @colorGrey: #838383;
 @colorDarkGrey: #1D1D1F;
 
+@media screen and (max-width: 575px) {
+	@offset: 10px;
+}
+
 .row () {
 	display: flex;
 	flex-wrap: wrap;
@@ -24,6 +28,8 @@
 	width: calc(@width - @ofse);
 	word-wrap: break-word;
 }
+
+.backgroundMaxWidth () {}
 
 .fontSizeTitle(@small, @large) {
 	font-size: clamp(@small, 10vw, @large);

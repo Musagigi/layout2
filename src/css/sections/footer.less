@@ -1,9 +1,9 @@
 .footer {
 	position: relative;
-	background: @colorDarkGrey;
-	color: @colorWhite;
 	&:extend(.sg-row);
-	justify-content: space-between;
+	color: @colorWhite;
+	background: @colorDarkGrey;
+	padding: 90px 0 125px 0;
 
 	&::before {
 		content: '';
@@ -19,7 +19,7 @@
 }
 
 .footerContacts {
-	.col(6);
+	flex-basis: 50%;
 
 	&__logo {
 		display: inline-block;
@@ -58,7 +58,7 @@
 }
 
 .footerEmail {
-	.col(6);
+	flex-basis: 50%;
 
 	&__title {
 		font-weight: 500;
