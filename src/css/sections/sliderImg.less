@@ -1,5 +1,6 @@
 .slider {
 	position: relative;
+	margin: 0px -200px;
 
 	&__wrapper {
 		padding-top: 56.25%;
@@ -43,11 +44,11 @@
 
 .sliderBtn {
 
-	&_size {
-		.sizeBtn(30px, 60px);
+	&_size_small {
+		.sizeBtn(35px, 60px);
 	}
 
-	&__left {
+	&__previous {
 		color: @colorWhite;
 
 		svg {
@@ -55,7 +56,7 @@
 		}
 	}
 
-	&__left:hover {
+	&__previous:hover {
 		background-color: @colorBlack;
 	}
 
@@ -67,7 +68,7 @@
 		object-fit: cover;
 	}
 
-	&__right {
+	&__next {
 		color: @colorBlack;
 
 		svg {
@@ -75,7 +76,7 @@
 		}
 	}
 
-	&__right:hover {
+	&__next:hover {
 		background-color: @colorWhite;
 	}
 }

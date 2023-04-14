@@ -40,8 +40,8 @@
 }
 
 .sizeBtn(@small, @large) {
-	width: clamp(@small, 5vw, @large);
-	height: clamp(@small, 5vw, @large);
+	width: clamp(@small, 10vw, @large);
+	height: clamp(@small, 10vw, @large);
 }
 
 .btnReset {
@@ -61,6 +61,27 @@
 	text-align: center;
 	background-color: @colorWhite;
 	.fontStyle(17px, 600, 21px);
+
+	&_light {
+		transition: .5s;
+		color: @colorDarkGrey;
+
+		&:hover {
+			color: @colorWhite;
+			background-color: @colorBlack;
+		}
+	}
+
+	&_dark {
+		color: @colorWhite;
+		background-color: @colorDarkGrey;
+		transition: .5s;
+
+		&:hover {
+			color: @colorBlack;
+			background-color: @colorGrey;
+		}
+	}
 }
 
 // .gradientText () {
