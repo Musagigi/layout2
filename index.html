@@ -14,9 +14,9 @@
 		<script src="js/main.js" defer></script>
 	</head>
 	<body class="body">
-		<header class="header">
-			<div class="container">
-				<div class="headerContainer">
+		<div class="container homePage">
+			<header class="header">
+				<div class="header__content">
 					<a class="logo">Company</a>
 					<div class="headerMenu">
 						<div class="headerMenu__dropdown dropdown">
@@ -82,12 +82,10 @@
 						</nav>
 					</div>
 				</div>
-			</div>
-		</header>
+			</header>
 
-		<main>
-			<section class="hero">
-				<div class="container">
+			<main class="homePage">
+				<section class="hero">
 					<h1 class="hero__title">
 						We&nbsp;produce the&nbsp;best products
 					</h1>
@@ -95,139 +93,122 @@
 						Mattis quam, lectus et justo amet, tortor, lectus
 						dapibus est. Habitasse efficitur sodales vel est.
 					</p>
-					<button class="hero__button btn btnFont">Button</button>
-				</div>
-			</section>
+					<a class="hero__bttn btn btn_light" href="#">Button</a>
+				</section>
 
-			<section class="about">
-				<div class="container">
-					<div class="aboutGroup">
-						<div class="left">
-							<div class="left__group">
-								<div class="left__number">20,000</div>
-								<p class="left__text">completed projects</p>
-							</div>
-							<div class="left__group">
-								<div class="left__number">10,000</div>
-								<p class="left__text">prototypes</p>
-							</div>
-							<div class="left__group">
-								<div class="left__number">347</div>
-								<p class="left__text">completed projects</p>
-							</div>
+				<section class="about">
+					<div class="statistic">
+						<div class="statistic__group">
+							<div class="statistic__number">20,000</div>
+							<p class="statistic__text">completed projects</p>
 						</div>
-						<div class="right">
-							<h2 class="right__title">
+						<div class="statistic__group">
+							<div class="statistic__number">10,000</div>
+							<p class="statistic__text">prototypes</p>
+						</div>
+						<div class="statistic__group">
+							<div class="statistic__number">347</div>
+							<p class="statistic__text">completed projects</p>
+						</div>
+					</div>
+					<div class="specific">
+						<h2 class="specific__title">
+							Amet, mattis dapibus malesuada arcu dapibus nec
+							efficitur et dictum. In sit odio. Tempus leo,
+							dictum.
+						</h2>
+
+						<div class="specific__descr">
+							<p class="specific__text">
 								Amet, mattis dapibus malesuada arcu dapibus nec
 								efficitur et dictum. In sit odio. Tempus leo,
-								dictum.
-							</h2>
-
-							<div class="right__descr">
-								<p class="right__text">
-									Amet, mattis dapibus malesuada arcu dapibus
-									nec efficitur et dictum. In sit odio. Tempus
-									leo, dictum. Sit mattis mattis lorem cursus
-									velit sit sed et vitae quam, sed nulla
-									dapibus venenatis odio.
-								</p>
-								<p class="right__text">
-									Venenatis sapien aenean adipiscing lacinia
-									nec lacinia lacinia et quam, ultricies.
-									Dictum. Ipsum sodales sit id nec sed sodales
-									mattis mollis quis, pellentesque habitasse
-									ex.
-								</p>
-							</div>
+								dictum. Sit mattis mattis lorem cursus velit sit
+								sed et vitae quam, sed nulla dapibus venenatis
+								odio.
+							</p>
+							<p class="specific__text">
+								Venenatis sapien aenean adipiscing lacinia nec
+								lacinia lacinia et quam, ultricies. Dictum.
+								Ipsum sodales sit id nec sed sodales mattis
+								mollis quis, pellentesque habitasse ex.
+							</p>
 						</div>
 					</div>
-				</div>
-			</section>
+				</section>
 
-			<div class="preview">
-				<div class="container">
-					<div class="previewVideo">
-						<video
-							src="./img/preview/video.mp4"
-							poster="./img/preview/Rectangle4.jpg"
-							preload="metadata"
-							playsinline
-							muted
-						></video>
-						<button
-							class="previewVideo__play btnReset"
-							aria-label="play video"
+				<div class="preview">
+					<video
+						src="./img/preview/video.mp4"
+						poster="./img/preview/Rectangle4.jpg"
+						preload="metadata"
+						playsinline
+						muted
+					></video>
+					<button
+						class="preview__play btnReset"
+						aria-label="play video"
+					>
+						<svg
+							width="100"
+							height="100"
+							viewBox="0 0 100 100"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
 						>
-							<svg
-								width="100"
-								height="100"
-								viewBox="0 0 100 100"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<circle cx="50" cy="50" r="50" />
-								<path
-									d="M63 50L44.25 62.9904L44.25 37.0096L63 50Z"
-									fill="#1D1D1F"
-								/>
-							</svg>
-						</button>
-					</div>
+							<circle cx="50" cy="50" r="50" />
+							<path
+								d="M63 50L44.25 62.9904L44.25 37.0096L63 50Z"
+								fill="#1D1D1F"
+							/>
+						</svg>
+					</button>
 				</div>
-			</div>
 
-			<section class="portfolio">
-				<div class="container">
-					<ul class="portfolioList">
+				<section class="portfolio">
+					<ul class="portfolio__list">
 						<li
-							class="portfolioList__item listItem listItem_reverse"
+							class="portfolio__item portfolioItem portfolioItem_reverse"
 						>
-							<div class="listItem__img">
+							<div class="portfolioItem__img">
 								<img
 									src="./img/portfolio/Rectangle5.jpg"
 									alt="img1"
 								/>
 							</div>
-							<div class="listItem__content">
-								<h3 class="listItem__title">Et odio</h3>
-								<p class="listItem__text">
+							<div class="portfolioItem__content">
+								<h3 class="portfolioItem__title">Et odio</h3>
+								<p class="portfolioItem__text">
 									Mauris eget nec nulla dolor ex. Sodales
 									luctus pellentesque cras ornare lorem luctus
 									lectus sed consectetur quam, est. Libero,
 									odi
 								</p>
-								<button class="listItem__btn btn btnFont">
-									Button
-								</button>
+								<a class="btn btn_dark" href="#"> Button </a>
 							</div>
 						</li>
-						<li class="portfolioList__item listItem">
-							<div class="listItem__img">
+						<li class="portfolio__item portfolioItem">
+							<div class="portfolioItem__img">
 								<img
 									src="./img/portfolio/Rectangle6.jpg"
 									alt="img2"
 								/>
 							</div>
-							<div class="listItem__content">
-								<h3 class="listItem__title">
+							<div class="portfolioItem__content">
+								<h3 class="portfolioItem__title">
 									Integer dapibus dictum
 								</h3>
-								<p class="listItem__text">
+								<p class="portfolioItem__text">
 									it pulvinar tempus amet dolor dui vulputate
 									tortor, luctus lorem in nunc eleifend ipsum
 									justo et venenatis dictumst.
 								</p>
-								<button class="listItem__btn btn btnFont">
-									Button
-								</button>
+								<a class="btn btn_dark" href="#"> Button </a>
 							</div>
 						</li>
 					</ul>
-				</div>
-			</section>
+				</section>
 
-			<section class="quoute">
-				<div class="container">
+				<section class="quoute">
 					<h3 class="quoute__title">Quoute</h3>
 					<blockquote class="quoute__content quouteContent">
 						<p class="quouteContent__text">
@@ -242,12 +223,10 @@
 							>Alex Lee / <span>Co-founder & SEO</span></cite
 						>
 					</blockquote>
-				</div>
-			</section>
+				</section>
 
-			<div class="slider">
-				<div class="slider__wrapper"></div>
-				<div class="slider__slide">
+				<div class="slider">
+					<div class="slider__wrapper"></div>
 					<ul class="slider__photos">
 						<li class="slider__photo slider__photo_show">
 							<img src="./img/slider/Rectangle7.jpg" alt="img3" />
@@ -268,53 +247,51 @@
 							/>
 						</li>
 					</ul>
-				</div>
-				<div class="slider__buttons sliderBtn">
-					<button
-						class="sliderBtn__left sliderBtn_size btnReset"
-						aria-label="button left"
-					>
-						<svg
-							width="60"
-							height="60"
-							viewBox="0 0 60 60"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
+					<div class="slider__buttons sliderBtn">
+						<button
+							class="sliderBtn__previous sliderBtn_size_small btnReset"
+							aria-label="button previous image"
 						>
-							<path
-								d="M40 12.5L22.5 30L40 47.5"
-								stroke-width="1.5"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							/>
-						</svg>
-					</button>
-					<button
-						class="sliderBtn__right sliderBtn_size btnReset"
-						aria-label="button right"
-					>
-						<svg
-							width="60"
-							height="60"
-							viewBox="0 0 60 60"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
+							<svg
+								width="60"
+								height="60"
+								viewBox="0 0 60 60"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M40 12.5L22.5 30L40 47.5"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+						<button
+							class="sliderBtn__next sliderBtn_size_small btnReset"
+							aria-label="button next image"
 						>
-							<path
-								d="M20 12.5L37.5 30L20 47.5"
-								stroke-width="1.5"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							/>
-						</svg>
-					</button>
+							<svg
+								width="60"
+								height="60"
+								viewBox="0 0 60 60"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M20 12.5L37.5 30L20 47.5"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+					</div>
 				</div>
-			</div>
 
-			<section class="services">
-				<div class="container">
-					<ul class="servicesList">
-						<li class="servicesList__item servicesItem">
+				<section class="services">
+					<ul class="services__list">
+						<li class="services__item servicesItem">
 							<h3 class="servicesItem__title">Branding</h3>
 							<p class="servicesItem__text">
 								Quam, tortor, interdum consectetur eleifend
@@ -323,7 +300,7 @@
 								Consectetur ultricies.
 							</p>
 						</li>
-						<li class="servicesList__item servicesItem">
+						<li class="services__item servicesItem">
 							<h3 class="servicesItem__title">Web-apps</h3>
 							<p class="servicesItem__text">
 								Malesuada efficitur mattis id mattis aenean
@@ -333,7 +310,7 @@
 								ex.
 							</p>
 						</li>
-						<li class="servicesList__item servicesItem">
+						<li class="services__item servicesItem">
 							<h3 class="servicesItem__title">Design</h3>
 							<p class="servicesItem__text">
 								Cras amet, sed sapien orci, leo, sit ornare
@@ -343,7 +320,7 @@
 								venenatis odio.
 							</p>
 						</li>
-						<li class="servicesList__item servicesItem">
+						<li class="services__item servicesItem">
 							<h3 class="servicesItem__title">Strategy</h3>
 							<p class="servicesItem__text">
 								Quam, tortor, interdum consectetur eleifend
@@ -353,12 +330,10 @@
 							</p>
 						</li>
 					</ul>
-				</div>
-			</section>
-		</main>
+				</section>
+			</main>
 
-		<footer class="footer">
-			<div class="container footerBlock">
+			<footer class="footer">
 				<div class="footerContacts">
 					<a class="footerContacts__logo logo">Company</a>
 					<address class="footerContacts__adrs">
@@ -373,16 +348,16 @@
 								aria-label="facebook"
 							>
 								<svg
-									width="40"
-									height="40"
-									viewBox="0 0 40 40"
+									width="11"
+									height="22"
+									viewBox="0 0 11 22"
 									fill="none"
 									xmlns="http://www.w3.org/2000/svg"
 								>
 									<path
 										fill-rule="evenodd"
 										clip-rule="evenodd"
-										d="M20 0.000488281C8.95431 0.000488281 0 8.95479 0 20.0005C0 31.0462 8.95431 40.0005 20 40.0005C31.0457 40.0005 40 31.0462 40 20.0005C40 8.95479 31.0457 0.000488281 20 0.000488281ZM22.0846 20.879V31.7601H17.5826V20.8794H15.3333V17.1297H17.5826V14.8785C17.5826 11.8195 18.8526 10.0005 22.461 10.0005H25.4651V13.7506H23.5873C22.1827 13.7506 22.0897 14.2746 22.0897 15.2526L22.0846 17.1293H25.4863L25.0883 20.879H22.0846Z"
+										d="M6.7513 21.7596V10.8785H9.75495L10.153 7.12884H6.7513L6.7564 5.25209C6.7564 4.27412 6.84932 3.7501 8.25397 3.7501H10.1317V0H7.12766C3.51928 0 2.24923 1.81899 2.24923 4.87797V7.12926H0V10.8789H2.24923V21.7596H6.7513Z"
 									/>
 								</svg>
 							</a>
@@ -395,16 +370,21 @@
 								aria-label="telegram"
 							>
 								<svg
-									width="40"
-									height="40"
-									viewBox="0 0 40 40"
+									width="22"
+									height="19"
+									viewBox="0 0 22 19"
 									fill="none"
 									xmlns="http://www.w3.org/2000/svg"
 								>
 									<path
 										fill-rule="evenodd"
 										clip-rule="evenodd"
-										d="M20 40.0005C31.0457 40.0005 40 31.0462 40 20.0005C40 8.95479 31.0457 0.000488281 20 0.000488281C8.95431 0.000488281 0 8.95479 0 20.0005C0 31.0462 8.95431 40.0005 20 40.0005ZM16.3333 29.1672C16.8198 29.1672 17.0421 28.9507 17.3107 28.6892L17.3333 28.6672L19.7356 26.3313L24.7333 30.0237C25.6531 30.5311 26.3169 30.2684 26.546 29.1697L29.8268 13.7092C30.1627 12.3625 29.3135 11.7517 28.4336 12.1512L9.1686 19.5797C7.85358 20.1072 7.86125 20.8408 8.9289 21.1677L13.8727 22.7108L25.3182 15.4899C25.8585 15.1623 26.3544 15.3384 25.9474 15.6997L16.6738 24.0684L16.6737 24.0683L16.6737 24.0685L16.6733 24.0688L16.6736 24.069L16.3333 29.1672Z"
+										d="M8.18021 17.1364C8.68021 17.1364 8.90112 16.9078 9.18021 16.6364L11.8469 14.0434L8.52054 12.0376"
+									/>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M8.52054 12.0376L16.5802 17.9931C17.5 18.5006 18.1638 18.2379 18.3929 17.1392L21.6737 1.67871C22.0096 0.332008 21.1604 -0.278792 20.2805 0.120674L1.01547 7.54917C-0.299544 8.07662 -0.291878 8.81027 0.775772 9.13717L5.71961 10.6802L17.1651 3.45939C17.7054 3.13174 18.2013 3.30789 17.7943 3.66912"
 									/>
 								</svg>
 							</a>
@@ -417,16 +397,21 @@
 								aria-label="google plus"
 							>
 								<svg
-									width="40"
-									height="40"
-									viewBox="0 0 40 40"
+									width="20"
+									height="13"
+									viewBox="0 0 20 13"
 									fill="none"
 									xmlns="http://www.w3.org/2000/svg"
 								>
 									<path
 										fill-rule="evenodd"
 										clip-rule="evenodd"
-										d="M0 20.0005C0 8.95479 8.95431 0.000488281 20 0.000488281C31.0457 0.000488281 40 8.95479 40 20.0005C40 31.0462 31.0457 40.0005 20 40.0005C8.95431 40.0005 0 31.0462 0 20.0005ZM16.34 19.4291V21.6005H19.9439C19.7987 22.5324 18.8546 24.3329 16.34 24.3329C14.1704 24.3329 12.4003 22.5414 12.4003 20.3338C12.4003 18.1262 14.1704 16.3348 16.34 16.3348C17.5746 16.3348 18.4007 16.8595 18.8727 17.3119L20.5975 15.6562C19.49 14.6248 18.0557 14.0005 16.34 14.0005C12.8269 14.0005 9.98557 16.8324 9.98557 20.3338C9.98557 23.8353 12.8269 26.6672 16.34 26.6672C20.0075 26.6672 22.4403 24.0976 22.4403 20.4786C22.4403 20.0624 22.3949 19.7457 22.3404 19.4291H16.34ZM28.1412 19.4291H29.9567V21.2386H28.1412V23.0481H26.3256V21.2386H24.51V19.4291H26.3256V17.6195H28.1412V19.4291Z"
+										d="M6.35445 5.42857V7.6H9.95834C9.81309 8.53191 8.869 10.3324 6.35445 10.3324C4.18486 10.3324 2.41469 8.54095 2.41469 6.33333C2.41469 4.12571 4.18486 2.33429 6.35445 2.33429C7.58903 2.33429 8.41511 2.85905 8.88716 3.31143L10.6119 1.65571C9.50445 0.624286 8.07016 0 6.35445 0C2.84135 0 0 2.8319 0 6.33333C0 9.83476 2.84135 12.6667 6.35445 12.6667C10.0219 12.6667 12.4547 10.0971 12.4547 6.4781C12.4547 6.06191 12.4093 5.74524 12.3549 5.42857H6.35445Z"
+									/>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M19.9711 5.42867H18.1556V3.61914H16.34V5.42867H14.5245V7.23819H16.34V9.04771H18.1556V7.23819H19.9711"
 									/>
 								</svg>
 							</a>
@@ -471,7 +456,7 @@
 						<div class="errFieldMessage"></div>
 					</form>
 				</div>
-			</div>
-		</footer>
+			</footer>
+		</div>
 	</body>
 </html>
