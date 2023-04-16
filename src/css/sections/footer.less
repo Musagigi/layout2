@@ -2,20 +2,8 @@
 	position: relative;
 	&:extend(.sg-row);
 	color: @colorWhite;
-	background: @colorDarkGrey;
 	padding: 90px 0 125px 0;
-
-	&::before {
-		content: '';
-		width: 100vw;
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: calc((-100vw + 100%) / 2);
-		background-color: @colorDarkGrey;
-		z-index: -1;
-	}
+	.maxWidth(@colorDarkGrey);
 }
 
 .footerContacts {

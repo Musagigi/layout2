@@ -1,7 +1,7 @@
 const slider = document.querySelector('.slider')
 const photo = document.querySelectorAll('.slider__photo')
-const btnLeft = document.querySelector('.sliderBtn__left')
-const btnRight = document.querySelector('.sliderBtn__right')
+const btnLeft = document.querySelector('.sliderBtn__previous')
+const btnRight = document.querySelector('.sliderBtn__next')
 let current = 0
 
 slider.addEventListener('contextmenu', cancelEvent)

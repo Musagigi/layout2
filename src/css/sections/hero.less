@@ -4,18 +4,7 @@
 	height: 100vh;
 	min-height: 900px;
 	color: @colorWhite;
-
-	&::before {
-		content: '';
-		width: 100vw;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: calc((-100vw + 100%) / 2);
-		z-index: -1;
-		background-color: @colorGrey;
-		background: url('@{path_img}hero/Rectangle1.jpg') center/ cover no-repeat;
-	}
+	.maxWidth(url('@{path_img}hero/Rectangle1.jpg') center/ cover no-repeat, @colorDarkGrey);
 
 	&__title {
 		.fontSizeTitle(44px, 96px);

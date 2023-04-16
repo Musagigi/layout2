@@ -30,7 +30,20 @@
 	word-wrap: break-word;
 }
 
-.backgroundMaxWidth () {}
+.maxWidth (@backImg: none, @backColor: none) {
+	&::before {
+		content: '';
+		width: 100vw;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: calc((-100vw + 100%) / 2);
+		background-color: @backColor;
+		background: @backImg;
+		z-index: -1;
+	}
+}
 
 .fontSizeTitle(@small, @large) {
 	font-size: clamp(@small, 10vw, @large);
