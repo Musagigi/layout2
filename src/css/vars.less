@@ -45,6 +45,13 @@
 	}
 }
 
+.mouseDevise (@hoverColor: none, @hoverBgColor: none) {
+	@media (hover: hover) and (pointer: fine) {
+		color: @hoverColor;
+		background-color: @hoverBgColor;
+	}
+}
+
 .fontSizeTitle(@small, @large) {
 	font-size: clamp(@small, 10vw, @large);
 }
@@ -88,8 +95,7 @@
 		color: @colorDarkGrey;
 
 		&:hover {
-			color: @colorWhite;
-			background-color: @colorBlack;
+			.mouseDevise(@hoverColor: @colorWhite, @hoverBgColor: @colorBlack);
 		}
 	}
 
@@ -99,8 +105,7 @@
 		transition: .5s;
 
 		&:hover {
-			color: @colorBlack;
-			background-color: @colorGrey;
+			.mouseDevise(@hoverColor: @colorBlack, @hoverBgColor: @colorGrey);
 		}
 	}
 }
